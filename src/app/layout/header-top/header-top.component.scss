@@ -1,0 +1,28 @@
+.header-top{
+    display: block !important;
+    background: #c9443e !important;
+    position: relative;
+    z-index: 1;
+    color: #d8d8d8;
+    vertical-align: baseline;
+}
+.header-top .topheaderContainer {
+    height: 30.2px;
+}
+.section-data {
+    border-radius: 2px;
+    line-height: 22px;
+    display: inline;
+}
+.containt-data {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 12px;
+    padding-top: 5px;
+}
+.rfloat {
+    float: right;
+}
+.lfloat {
+    float: left;
+}

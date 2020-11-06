@@ -1,0 +1,15 @@
+<div class="heading">TRENDING BOOKS</div>
+<div class="wrapper">
+    <div class="card__wrap" *ngFor="let product of productData; let i = index;" (click)="addNewItem(product.id)" (keyup.enter)="addNewItem(product.id)" tabindex="{{i+5}}">
+        <img [src]="product.img_path" class="img__img" [alt]="product.name">
+        <div class="cardProd_details"> 
+            
+            <div>
+                <span class="product-strike" *ngIf="product.percentDscount != 'none'">$999</span>
+                <span class="product-price">  ${{product.price}}  </span>
+                <span class="cardProductTagDisc" *ngIf="product.percentDscount != 'none'">{{product.percentDscount}}% Off</span>
+            </div>
+            <div class="cardProd_name">{{product.name}}</div>
+        </div>
+    </div>
+</div>

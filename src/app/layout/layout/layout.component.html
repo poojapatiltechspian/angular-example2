@@ -1,0 +1,33 @@
+<app-header-top></app-header-top>
+<div class="header-top">
+    <div class="topheaderContainer margin-page">
+        <span class="lfloat">
+            <img src="assets/img/logo.png" class="section-data containt-logo">
+            <!-- <span class="section-data containt-logo">
+            Classics Bookstore
+            </span> -->
+        </span>
+        <span class="rfloat">
+            <span class="section-data containt-data menuContainer" tabindex="1" (click)="theme(isChecked)">Switch Theme</span>
+            <span class="section-data containt-data menuContainer" *ngIf="isLoginUser==true" (click)="logout()">Logout </span>
+            <span class="section-data containt-data menuContainer" *ngIf="isLoginUser!=true" routerLink="/home">Home</span>
+            <span class="section-data containt-data menuContainer" *ngIf="isLoginUser!=true" routerLink="/user/login">Login User</span>
+            <span class="section-data containt-data menuContainer" *ngIf="isLoginUser!=true" routerLink="/user/registration">Register User</span>
+        </span>
+    </div>
+</div>
+
+<!-- <div class="header-top m-1">
+     <span class="right-side-top"> 
+        <button class="button-format m-1"  tabindex="1" (click)="theme(isChecked)">Switch Theme</button>
+        <button class="button-format m-1" *ngIf="isLoginUser==true" (click)="logout()"  tabindex="2">Logout</button>
+        <button class="button-format m-1" *ngIf="isLoginUser!=true" routerLink="/home"  tabindex="2">Home</button>
+        <button class="button-format m-1" *ngIf="isLoginUser!=true" routerLink="/user/login"  tabindex="3">Login User</button>
+        <button class="button-format m-1" *ngIf="isLoginUser!=true" routerLink="/user/registration" tabindex="4">Register User</button>
+    </span>
+</div> -->
+<div *ngIf="isLoginUser==true">
+  <app-header></app-header>
+</div>
+<router-outlet></router-outlet> 
+<app-footer></app-footer>

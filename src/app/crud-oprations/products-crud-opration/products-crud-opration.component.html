@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="heading">Add Product</div>
+    <form [formGroup]="productForm">
+      <div class="input-container">
+        <input type="text"  formControlName="name" placeholder="Name" class="full-width">
+      </div>
+      <div class="error-msg" *ngIf="productForm.controls.name.invalid && (productForm.controls.name.dirty || productForm.controls.name.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="productForm.controls.name.errors.required">Name is required!</span>
+      </div>
+      <div class="input-container">
+        <textarea formControlName="description" placeholder="Description" class="full-width"></textarea>
+      </div>
+      <div class="error-msg" *ngIf="productForm.controls.description.invalid && (productForm.controls.description.dirty || productForm.controls.description.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="productForm.controls.description.errors.required">Description is required!</span>
+      </div>
+      <div class="input-container">
+        <input type="text"  formControlName="price" placeholder="Price" class="full-width">
+      </div> 
+      <div class="error-msg" *ngIf="productForm.controls.price.invalid && (productForm.controls.price.dirty || productForm.controls.price.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="productForm.controls.price.errors.required">Price is required!</span>
+      </div>
+      <div class="input-container">
+        <input type="text"  formControlName="quantity" placeholder="Quantity" class="full-width">
+      </div>
+      <div class="error-msg" *ngIf="productForm.controls.quantity.invalid && (productForm.controls.quantity.dirty || productForm.controls.quantity.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="productForm.controls.quantity.errors.required">Quantity is required!</span>
+      </div>
+      <div class="input-container" *ngIf="isEdit != true">
+        <app-button [labelbutton]="buttonLable" [disabledFlag]="productForm.invalid" [FormValue]="productForm.value" (click)="onSubmit(productForm)"></app-button>
+      </div>
+      <div class="input-container" *ngIf="isEdit == true">
+        <app-button [labelbutton]="buttonLable" [disabledFlag]="productForm.invalid" [FormValue]="productForm.value" (click)="editData(productForm)"></app-button>
+      </div>
+    </form>
+    <hr class="solid">
+  <div class="heading">Link Products</div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let link of products" class="table-row">
+          <td>{{link.id}}</td>
+          <td>{{link.name}}</td>
+          <td>{{link.description}}</td>
+          <td>{{link.price}}</td>
+          <td>{{link.quantity}}</td>
+          <td>
+          <app-button [labelbutton]="buttonEdit" [disabledFlag]="false" [FormValue]="link.id" (click)="edit(link.id)"></app-button>
+            <!-- <button (click)="edit(link.id)">Edit</button> -->
+          </td>
+          <td>
+            <app-button [labelbutton]="buttonDelete" [disabledFlag]="false" [FormValue]="link.id" (click)="delete(link.id)"></app-button>
+            <!-- <button (click)="delete(link.id)">Delete</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

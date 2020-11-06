@@ -1,0 +1,72 @@
+.header-top{
+    display: grid;
+    justify-items: end;
+}
+input[type="checkbox" i] {
+  display: none;
+}
+.button-format {
+  background-color: #4c61af;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  width: auto;
+}
+.label-Switch-theme {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  align-items: center;
+
+}
+
+
+.header-top{
+  display: block !important;
+  background: #e74f47 !important;
+  position: relative;
+  z-index: 1;
+  color: #d8d8d8;
+  vertical-align: baseline;
+}
+.header-top .topheaderContainer {
+  height: 50px;
+  padding-top: 10px;
+}
+.section-data {
+  border-radius: 2px;
+  line-height: 22px;
+  display: inline;
+}
+.containt-data {
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 12px;
+  padding : 10px;
+  vertical-align: middle;
+  display: table-cell;
+}
+.containt-logo{
+  // text-transform: capitalize;
+  // color: #ffffff;
+  // font-size: 25px;
+  // padding-top: 5px;
+  // font-family: Impact, Charcoal, sans-serif !important;
+  height: 40px;
+}
+.menuContainer {
+  border-left: 1px solid rgba(0,0,0,0.07);
+  // heigt: 63px;
+  text-align: center;
+  // display: table;
+  cursor: pointer;
+}
+.rfloat {
+  float: right;
+}
+.lfloat {
+  float: left;
+}

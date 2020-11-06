@@ -1,0 +1,36 @@
+<div class="container form-width m-1">
+    <div class="heading">User Registration</div>
+    <form [formGroup]="RegistrationForm" (ngSubmit)="onSubmit()">
+        <div class="input-container">
+           <input type="text" formControlName="user_name" placeholder="User Id" class="full-width">
+        </div>
+        <div class="error-msg" *ngIf="RegistrationForm.controls.user_name.invalid && (RegistrationForm.controls.user_name.dirty || RegistrationForm.controls.user_name.touched)" class="text-danger">
+            <span class="error-msg" *ngIf="RegistrationForm.controls.user_name.errors.required">User name is required!</span>
+            <span class="error-msg" *ngIf="RegistrationForm.controls.user_name.errors.minlength">Minimum 2 characters required!</span>
+            <span class="error-msg" *ngIf="RegistrationForm.controls.user_name.errors.maxlength">Maximum 200  characters required!</span>
+        </div>
+        <div class="input-container">
+            <input type="password"  formControlName="password" placeholder="password" class="full-width">
+        </div> 
+        <div class="error-msg" *ngIf="RegistrationForm.controls.password.invalid && (RegistrationForm.controls.password.dirty || RegistrationForm.controls.password.touched)" class="text-danger">
+            <span class="error-msg" *ngIf="RegistrationForm.controls.password.errors.required">Password is required!</span>
+            <span class="error-msg" *ngIf="RegistrationForm.controls.password.errors.minlength">Minimum 2 characters required!</span>
+            <span class="error-msg" *ngIf="RegistrationForm.controls.password.errors.maxlength">Maximum 10  characters required!</span>
+        </div>
+        <div class="input-container">
+            <input type="password"  formControlName="confirm_password" placeholder="Confirm Password" class="full-width">
+        </div> 
+        <div class="error-msg" *ngIf="RegistrationForm.controls.confirm_password.invalid && (RegistrationForm.controls.confirm_password.dirty || RegistrationForm.controls.confirm_password.touched)" class="text-danger">
+            <span class="error-msg" *ngIf="RegistrationForm.controls.confirm_password.errors.required">Confirm Password is required!</span>
+            <span class="error-msg" *ngIf="RegistrationForm.controls.confirm_password.errors.minlength">Minimum 2 characters required!</span>
+            <span class="error-msg" *ngIf="RegistrationForm.controls.confirm_password.errors.maxlength">Maximum 10  characters required!</span>
+            <span class="error-msg" *ngIf="RegistrationForm.controls.confirm_password.value !== RegistrationForm.controls.password.value">Password and confirm password not maching!</span>
+        </div>
+        <div class="error-msg p-1" *ngIf="RegistrationForm.controls.confirm_password.value !== RegistrationForm.controls.password.value">Password and confirm password not maching!</div>
+        <div class="input-container">
+            <button type="submit">
+            Submit
+            </button>
+        </div>
+    </form>
+</div>

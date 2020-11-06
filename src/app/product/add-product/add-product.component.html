@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="heading" *ngIf="isEdit != true">Add Product</div>
+    <div class="heading" *ngIf="isEdit == true">Edit Product</div>
+
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit(productForm.value)">
+      <div class="input-container">
+        <input type="text"  formControlName="name" placeholder="Name" class="full-width">
+      </div>
+      <div class="error-msg" *ngIf="productForm.controls.name.invalid && (productForm.controls.name.dirty || productForm.controls.name.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="productForm.controls.name.errors.required">Name is required!</span>
+      </div>
+      <div class="input-container">
+        <textarea formControlName="description" placeholder="Description" class="full-width"></textarea>
+      </div>
+      <div class="error-msg" *ngIf="productForm.controls.description.invalid && (productForm.controls.description.dirty || productForm.controls.description.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="productForm.controls.description.errors.required">Description is required!</span>
+      </div>
+      <div class="input-container">
+        <input type="text"  formControlName="price" placeholder="Price" class="full-width">
+      </div>
+      <div class="error-msg" *ngIf="productForm.controls.price.invalid && (productForm.controls.price.dirty || productForm.controls.price.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="productForm.controls.price.errors.required">Price is required!</span>
+      </div>
+      <div class="input-container">
+        <input type="text"  formControlName="quantity" placeholder="Quantity" class="full-width">
+      </div>
+      <div class="error-msg" *ngIf="productForm.controls.quantity.invalid && (productForm.controls.quantity.dirty || productForm.controls.quantity.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="productForm.controls.quantity.errors.required">Quantity is required!</span>
+      </div>
+      <div class="input-container" *ngIf="isEdit != true">
+        <button type="submit" [disabled]="productForm.invalid">
+          Save
+        </button>
+      </div>
+      <div class="input-container" *ngIf="isEdit == true">
+        <button type="Button" [disabled]="productForm.invalid" (click)="editData()">
+          Update
+        </button>
+      </div>
+    </form>
+</div>
+  

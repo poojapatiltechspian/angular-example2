@@ -1,0 +1,27 @@
+<div class="container form-width m-1">
+    <div class="heading">User Login</div>
+    <form [formGroup]="LoginForm" (ngSubmit)="onSubmit(LoginForm.value)">
+      <div class="input-container">
+        <input type="text" formControlName="user_name" placeholder="User Name" class="full-width">
+      </div>
+      <div class="error-msg" *ngIf="LoginForm.controls.user_name.invalid && (LoginForm.controls.user_name.dirty || LoginForm.controls.user_name.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="LoginForm.controls.user_name.errors.required">User name is required!</span>
+        <span class="error-msg" *ngIf="LoginForm.controls.user_name.errors.minlength">Minimum 2 characters required!</span>
+        <span class="error-msg" *ngIf="LoginForm.controls.user_name.errors.maxlength">Maximum 200  characters required!</span>
+        <!-- <span *ngIf="LoginForm.controls.user_name.errors.pattern">Invalid value for this field</span> -->
+    </div>
+      <div class="input-container">
+        <input type="password"  formControlName="password" placeholder="password" class="full-width">
+      </div> 
+      <div class="error-msg" *ngIf="LoginForm.controls.password.invalid && (LoginForm.controls.password.dirty || LoginForm.controls.password.touched)" class="text-danger">
+        <span class="error-msg" *ngIf="LoginForm.controls.password.errors.required">Password is required!</span>
+        <span class="error-msg" *ngIf="LoginForm.controls.password.errors.minlength">Minimum 2 characters required!</span>
+        <span class="error-msg" *ngIf="LoginForm.controls.password.errors.maxlength">Maximum 10  characters required!</span>
+    </div>
+      <div class="input-container">
+        <button type="submit">
+          Login
+        </button>
+      </div>
+    </form>
+</div>

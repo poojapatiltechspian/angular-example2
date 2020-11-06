@@ -1,0 +1,162 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wise and Otherwise: A salute to Life",
+      "description": "Understanding human and human nature is one of the toughest jobs .Many time what seems right and good or vice versa can be completely different if explored to proper depth. In many instance, we all come across people and forms an opinion about the people we meet without actually knowing anything about them. But hearing and learning about such instances helps us to redefine our thought process and become wiser. Sudha Murty’s book Wise and otherwise will take you to a journey across the length and breadth of India through narrations of 51 stories inspired by the extensive travels of the author herself.",
+      "price": "1200",
+      "nodiscount": "1500",
+      "quantity": "30",
+      "percentDscount": "58",
+      "img_path": "assets/img/sudhamurti1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "The Gopi Diaries: Coming Home",
+      "description": "The Gopi Diaries is a series of three books for children about a dog called Gopi. Told in Gopi's voice, the first book, Coming Home, begins with Gopi going to his new home, and tells the story of how he settles down with his loving, human family. How Gopi sees the world around him and what he thinks of the people in his life give the story a truly unique flavour. Written in Sudha Murty's inimitable style, these are books children and adults will treasure as the simple stories talk of basic values even when told from a dog's perspective.",
+      "price": "390",
+      "nodiscount": "500",
+      "quantity": "23",
+      "percentDscount": "85",
+      "img_path": "assets/img/sudhamurti2.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Wings of Fire: An Autobiography of Abdul Kalam",
+      "description": "Dr. Kalam by narrating his life journey evokes the reader to identify with one’s inner fire and potential.",
+      "price": "90",
+      "nodiscount": "150",
+      "quantity": "88",
+      "percentDscount": "80",
+      "img_path": "assets/img/wings-of-fire-biography-kalam.jpg"
+    },
+    {
+      "id": 5,
+      "name": "The Pursuit of Happiness: A Book of Studies and Strowings",
+      "description": "Half of happiness is the recognition that we are happy; and half of misery is the forgetting how many causes of happiness we have.",
+      "price": "4400",
+      "nodiscount": "1500",
+      "quantity": "20",
+      "percentDscount": "20",
+      "img_path": "assets/img/pursuit.jpg"
+    },
+    {
+      "id": 6,
+      "name": "The Diary of a Young Girl",
+      "description": "A laptop, is a small, portable personal computer with a \"clamshell\" form factor, typically having a thin LCD or LED computer screen mounted on the inside of the upper lid of the clamshell and an alphanumeric keyboard on the inside of the lower lid. The clamshell is opened up to use the computer.",
+      "price": "120",
+      "nodiscount": "200",
+      "quantity": "20",
+      "percentDscount": "68",
+      "img_path": "assets/img/theDiaryofaYoungGirl.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Twelfth Night : Shakespeare’s Greatest Stories For Children",
+      "description": "Stocked with inventive and witty dialogues, twelfth night is a tale of twin siblings separated by a shipwreck and stuck in a farcical world, upholding mistaken identities. ",
+      "price": "120",
+      "nodiscount": "250",
+      "quantity": "20",
+      "percentDscount": "85",
+      "img_path": "assets/img/tTwelfthNight.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Because Life is a Gift",
+      "description": "He is ten years old and confined to a wheelchair. But that's not his identity. To the world, he is India's youngest patent holder for inventing variants of chess for six, twelve and sixty players.",
+      "price": "120",
+      "nodiscount": "160",
+      "quantity": "20",
+      "percentDscount": "none",
+      "img_path": "assets/img/Because Life is a Gift.jpg"
+    },
+    {
+      "id": 9,
+      "name": "The Girl in Room",
+      "description": "Hi, I’m Keshav, and my life is screwed. I hate my job and my girlfriend left me. Ah, the beautiful Zara. Zara is from Kashmir. She is a Muslim.",
+      "price": "1200",
+      "nodiscount": "2300",
+      "quantity": "30",
+      "percentDscount": "58",
+      "img_path": "assets/img/TheGirlinRoom.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Life is What You Make It",
+      "description": "Please note that orders which exceed the quantity limit will be auto-canceled. This is applicable across sellers.",
+      "price": "390",
+      "nodiscount": "500",
+      "quantity": "23",
+      "percentDscount": "85",
+      "img_path": "assets/img/LifeisWhatYouMakeIt.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Sometimes It Happens",
+      "description": "Gautam is a twenty-five-year-old upcoming professional and Roshni, a senior management member working in the same multinational bank.",
+      "price": "90",
+      "nodiscount": "250",
+      "quantity": "88",
+      "percentDscount": "80",
+      "img_path": "assets/img/SometimesItHappens.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Her Last Wish",
+      "description": "His father's over expectations only ruined his self-confidence further with each failure. A ray of hope walked into his life as his wife, a charismatic personality spreading joy wherever she went. ",
+      "price": "1200",
+      "nodiscount": "2500",
+      "quantity": "30",
+      "percentDscount": "58",
+      "img_path": "assets/img/HerLastWish.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Till We Meet Again",
+      "description": "Ordinary people have extra-ordinary stories.” Aryan is a young man with an extra-ordinary zeal to discover himself. ",
+      "price": "390",
+      "nodiscount": "500",
+      "quantity": "23",
+      "percentDscount": "85",
+      "img_path": "assets/img/TillWeMeetAgain.jpg"
+    },
+    {
+      "id": 15,
+      "name": "It Doesn't Hurt To Be Nice: Rediscover Life with a Pinch of Salt and Humour",
+      "description": "Kiara is a dynamic, thirty-something girl who has reached great heights professionally, and is the apple of the eye for almost everyone who knows her.",
+      "price": "90",
+      "nodiscount": "200",
+      "quantity": "88",
+      "percentDscount": "80",
+      "img_path": "assets/img/DoesntHurtToBeNice.jpg"
+    }
+  ],
+  "user-details": [
+    {
+      "id": "1",
+      "user_name": "user1",
+      "password": "123"
+    },
+    {
+      "user_name": "user2",
+      "password": "user2",
+      "id": "4jx61t8"
+    },
+    {
+      "user_name": "user2",
+      "password": "123",
+      "confirm_password": "123",
+      "id": "_ruzhpi"
+    },
+    {
+      "user_name": "user3",
+      "password": "123",
+      "confirm_password": "123",
+      "id": "vITfy7a"
+    },
+    {
+      "password": "123",
+      "id": "scKujUi"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="heading">NgRx Product List</div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quntity</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let link of productList$ | async" classe="table-row">
+        <td>{{link.id}}</td>
+        <td>{{link.name}}</td>
+        <td>{{link.description}}</td>
+        <td>{{link.price}}</td>
+        <td>{{link.quantity}}</td>
+        <td>
+            <button (click)="edit(link.id)">Edit</button>
+        </td> 
+        <td>
+            <button (click)="delete(link.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

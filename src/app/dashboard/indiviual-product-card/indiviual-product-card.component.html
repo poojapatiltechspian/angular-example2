@@ -1,0 +1,12 @@
+<div class="container-product">
+    <div class="img__wrapper">
+        <img [src]="product?.img_path" class="img__img" [alt]="product?.name">
+    </div>
+    <div class="content__wrapper">
+        <div class="heading">Product Details</div>
+        <div class="content__name"> {{product?.name}} </div>
+        <div class="content__description"> {{product?.description}} </div>
+        <div class="content__price">Price: $ {{product?.price}} </div>
+        <div class="content__price">Avaible quentity: {{product?.quantity}} </div>
+    </div>
+</div>

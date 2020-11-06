@@ -1,0 +1,28 @@
+.Follow {
+    margin-bottom: 27px;
+    padding-top: 20px;
+}
+ul.location_icon {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+.footer {
+    background: url(../../../assets/img/footer-bg.jpg);
+    padding-bottom: 35px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.containt {
+    left: 15%;
+    z-index: 10;
+    color: #fff;
+}
+.copyright p {
+    color: #120f0f;
+    font-size: 16px;
+    text-align: center;
+}
